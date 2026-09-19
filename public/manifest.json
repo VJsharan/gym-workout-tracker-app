@@ -1,0 +1,21 @@
+{
+  "name": "Sharan's Gym Buddy",
+  "short_name": "Gym Buddy",
+  "description": "Sharan's Gym Buddy - Daily Workout Tracker",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf1e7",
+  "theme_color": "#171210",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
