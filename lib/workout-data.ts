@@ -12,22 +12,20 @@ export const coreWorkouts: Record<DayKey, { name: string; detail?: string }[]> =
   1: [
     'Dumbbell curls (machine)',
     'Tricep rope pulldown',
-    'Dumbbell curls (manual)',
     'Tricep bar pushdown',
     'Bicep bar pull',
     'Tricep dips',
     'Hammer curls',
-    'Barbell curls',
     'Preacher bicep curl',
     'Tricep overhead extension',
   ].map((name) => ({ name })),
   2: [
     'Squat',
+    'Machine squats',
+    'Leg press',
     'Hamstring',
     'Leg extension',
-    'Leg press',
     'Calf raises',
-    'Machine squats',
     'Abductor',
     'Adductor',
   ].map((name) => ({ name })),
@@ -47,7 +45,10 @@ export const coreWorkouts: Record<DayKey, { name: string; detail?: string }[]> =
     'Shoulder press',
     'Normal chest flies',
     'Reverse flies',
+    'Lateral raise',
+    'Shoulder dumbbell raise',
     'Tricep + chest looking down dips',
+    'Shoulder shrugs',
   ].map((name) => ({ name })),
   5: [
     'Wide Grip Lat Pulldown',
@@ -56,9 +57,6 @@ export const coreWorkouts: Record<DayKey, { name: string; detail?: string }[]> =
     'Arm Grip Reverse Lat Pulldown',
     'Cable lat pushdown',
     'Assisted pull ups',
-    'Lateral raise',
-    'Shoulder shrugs',
-    'Shoulder dumbbell raise',
   ].map((name) => ({ name })),
 }
 
@@ -67,6 +65,15 @@ export const dayNames: Record<DayKey, string> = {
   2: 'Leg',
   3: 'Cardio',
   4: 'Chest',
+  5: 'Lat',
+}
+
+/** Full routine title on the active workout screen (swap UI keeps `dayNames`). */
+export const workoutViewDayNames: Record<DayKey, string> = {
+  1: 'Bi + Tri',
+  2: 'Leg',
+  3: 'Cardio',
+  4: 'Chest + Shoulders',
   5: 'Lat',
 }
 

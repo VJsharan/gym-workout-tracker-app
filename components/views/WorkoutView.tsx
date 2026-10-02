@@ -7,6 +7,7 @@ import {
   coreWorkouts,
   dayColors,
   dayNames,
+  workoutViewDayNames,
   titleCase,
   workoutDetail,
 } from '@/lib/workout-data'
@@ -100,7 +101,7 @@ export function WorkoutView({
         )}
 
         <h1>
-          {dayNames[variation]}
+          {workoutViewDayNames[variation]}
           <br />
           <span>day.</span>
         </h1>
@@ -192,7 +193,7 @@ export function WorkoutView({
           disabled={!canSubmit}
           aria-disabled={!canSubmit}
         >
-          Complete {dayNames[variation]} Day
+          Complete {workoutViewDayNames[variation]} Day
         </button>
       </div>
 

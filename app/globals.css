@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 
-:root { --paper: #fbf1e7; --ink: #171210; --muted: #6f625a; --line: #171210; --blue: #d84727; --red: #c8321d; --yellow: #ffd21a; --green: #36a269; --purple: #7848a8; --orange: #ee6b2c; --font-display: Impact, Haettenschweiler, 'Arial Narrow Bold', 'Arial Narrow', sans-serif; --font-ui: Helvetica, Arial, sans-serif; --font-google-sans: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+:root { --paper: #fbf1e7; --ink: #171210; --muted: #6f625a; --line: #171210; --blue: #d84727; --red: #c8321d; --yellow: #ffd21a; --green: #36a269; --purple: #7848a8; --orange: #ee6b2c; --font-display: var(--font-display-loaded), Impact, Haettenschweiler, 'Arial Narrow Bold', 'Arial Black', sans-serif; --font-ui: var(--font-exercise-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; --font-google-sans: var(--font-exercise-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
 * { box-sizing: border-box; }
 html, body { min-height: 100%; overflow-x: clip; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-ui); letter-spacing: .028em; }
